@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+    height: 100vh;
+}
+
+#container-box.active {
+    background: rgb(236,242,245);
+}
+
+.password-box {
+    display: flex;
+    background-color: rgb(31, 41, 55);
+    width: 575px;
+    height: 580px;
+    border-radius: 1rem;
+    margin: 0 auto;
+    margin-top: 7rem;
+    border: 3px solid rgb(85, 249, 145);
+}
+
+#toggle {
+    margin-top: -4rem;
+    margin-left: 22rem;
+    position: relative;
+    display: block;
+    width: 120px;
+    height: 50px;
+    border-radius: 2rem;
+    background-color: rgb(47,62,83);
+    transition: .5s;
+}
+
+#toggle .indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(16,185,129);
+    border-radius: 50%;
+    transform: scale(0.9);
+    transition: .5s;
+}
+
+#toggle.active .indicator {
+    left: 70px;
+    background-color: rgb(47,62,83);
+}
+
+#toggle.active {
+    background-color:rgb(85, 249, 145); 
+}
+
+.greet-box {
+    margin-left: 2.5rem;
+    margin-top: 6rem;
+}
+
+
+.color-change {
+    color: white;
+}
+
+.color-change.active {
+  color: rgb(47,62,83);
+}
+
+
+p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+span {
+    display: block;
+    color: rgb(74, 223, 134);
+    font-weight: bold;
+}
+
+button {
+    padding: 1rem 2.5rem;
+    background-color: rgb(16,185,129);
+    border-radius: 1rem;
+    border: none;
+    margin-top: 3.5rem;
+}
+
+button:hover {
+    background-color: rgb(85, 249, 145);
+ 
+}
+
+
+.line {
+    color: rgb(107, 114, 128);
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.random-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: white;
+ 
+}
+
+.random-box #random-1 {
+    padding: 1rem 4rem;  
+    background-color: rgb(107, 114, 128);
+    border-radius: .5rem;
+    font-size: 12px;
+    padding-left: -2rem;
+}
+
+.random-box #random-2 {
+    padding: 1rem 4rem;
+    background-color: rgb(107, 114, 128);
+    border-radius: .5rem;
+    font-size: 12px;
+    padding-left: -2rem;
+}
+
+.random-box #random-1.active {
+    background-color: rgb(47,62,83);
+}
+
+.random-box #random-2.active {
+    background-color: rgb(47,62,83);
+}
+
+
+
+
